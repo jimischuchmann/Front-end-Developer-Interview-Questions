@@ -162,11 +162,13 @@ add(2)(5); // 7
 ```javascript
 "i'm a lasagna hog".split("").reverse().join("");
 ```
+Answer: "goh angasal a m'i"
 
 *Question: What is the value of `window.foo`?*
 ```javascript
 ( window.foo || ( window.foo = "bar" ) );
 ```
+Answer: "bar" (only if window.foo was falsey otherwise it will retain its value)
 
 *Question: What is the outcome of the two alerts below?*
 ```javascript
@@ -177,6 +179,7 @@ var foo = "Hello";
 })();
 alert(foo + bar);
 ```
+Answer: "Hello World" & ReferenceError: bar is not defined
 
 *Question: What is the value of `foo.length`?*
 ```javascript
@@ -184,6 +187,7 @@ var foo = [];
 foo.push(1);
 foo.push(2);
 ```
+Answer: 2
 
 #### Fun Questions:
 
